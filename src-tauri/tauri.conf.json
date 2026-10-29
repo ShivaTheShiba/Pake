@@ -1,20 +1,23 @@
 {
-  "package": {
-    "productName": "PeakBot",
-    "version": "1.0.0"
+  "productName": "PeakBot",
+  "identifier": "com.peakbot.app",
+  "version": "1.0.0",
+  "app": {
+    "withGlobalTauri": true,
+    "security": {
+      "headers": {},
+      "csp": null
+    }
   },
-  "tauri": {
-    "bundle": {
-      "identifier": "com.peakbot.app",
-      "active": true,
-      "targets": ["msi"]
-    },
-    "windows": [
-      {
-        "title": "PeakBot Dashboard",
-        "width": 1200,
-        "height": 780
+  "bundle": {
+    "tauri": {
+      "nsis": {
+        "installerHeaderIcon": "./logo.png",
+        "compression": "none"
       }
-    ]
+    }
+  },
+  "build": {
+    "frontendDist": "../dist"
   }
 }
