@@ -1,10 +1,19 @@
-"bundle": {
+{
+  "package": {
+    "productName": "PeakBot",
+    "version": "1.0.0"
+  },
   "tauri": {
-    "nsis": {
-      "installerHeaderIcon": "./logo.png",
-      "sidebarImage": "./installer-side.bmp",
-      "headerImage": "./installer-top.bmp",
-      "compression": "none"
-    }
+    "bundle": {
+      "identifier": "com.peakbot.app",
+      "active": true
+    },
+    "windows": [
+      {
+        "title": "PeakBot Dashboard",
+        "width": 1200,
+        "height": 780
+      }
+    ]
   }
 }
