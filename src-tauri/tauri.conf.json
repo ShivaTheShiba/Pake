@@ -1,20 +1,10 @@
-{
-  "productName": "Weekly",
-  "identifier": "com.pake.weekly",
-  "version": "3.17.8",
-  "app": {
-    "withGlobalTauri": true,
-    "trayIcon": {
-      "iconPath": "png/weekly_512.png",
-      "iconAsTemplate": false,
-      "id": "pake-tray"
-    },
-    "security": {
-      "headers": {},
-      "csp": null
+"bundle": {
+  "tauri": {
+    "nsis": {
+      "installerHeaderIcon": "./logo.png",
+      "sidebarImage": "./installer-side.bmp",
+      "headerImage": "./installer-top.bmp",
+      "compression": "none"
     }
-  },
-  "build": {
-    "frontendDist": "../dist"
   }
 }
