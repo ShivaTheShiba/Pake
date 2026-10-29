@@ -6,7 +6,8 @@
   "tauri": {
     "bundle": {
       "identifier": "com.peakbot.app",
-      "active": true
+      "active": true,
+      "targets": ["msi"]
     },
     "windows": [
       {
